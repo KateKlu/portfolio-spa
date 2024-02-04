@@ -469,6 +469,7 @@ footer .contact-link {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-items: center;
     }
 
     .login input {
@@ -476,8 +477,4 @@ footer .contact-link {
     }
 
   }
-
-
-
-
 

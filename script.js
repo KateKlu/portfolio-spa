@@ -23,7 +23,7 @@ prevBtn.addEventListener('click', () => {
 nextBtn.addEventListener('click', () => {nextSlide()})
 
 // Automatic slide change 
-setInterval(() => {nextSlide();}, 10000);
+setInterval(() => {nextSlide();}, 7000);
 
 
 ///////////////        BurgerMenu          ////////////
