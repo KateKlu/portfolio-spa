@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./images/icon.ico">
+    <script
+      src="https://kit.fontawesome.com/ca9d744fce.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <header>
+        <nav class='navbar'>
+            <div class="container">
+                <a href="#"><img src="./images/logo-small.png" alt="" class="logo"></a>
+                <div class="burger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-link" id="home">Home</a></li>
+                    <li><a href="#" class="nav-link" id="about">About me</a></li>
+                    <li><a href="#" class="nav-link" id="projects">Projects</a></li>
+                    <li><a href="#" class="nav-link" id="contacts">Contacts</a></li>
+                    <li><a href="#" class="nav-link" id="login">Admin</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="home">
+            <div class="container">
+                <h1>Katerina Kliuieva</h1>
+                <h2>Frontend developer</h2>
+                <button class="btn"><a href="#" id="contactsBtn">Contact me</a></button>
+            </div>
+        </section>
+ 
+        <section class="about hidden" id="navAboutme">
+            <div class="container">
+                <img src="./images/photo_2024-01-31_12-29-22.jpg" alt="Katerina's photo">
+                <div class="about-me">
+                   <h2>About me</h2>
+                   <p>Let me introduce myself! My name is Katerina and I'm a front-end developer from Ukraine currently based in Sweden.</p>
+                   <p>This is a new and very interesting step in my carrier. Before I worked like a QA Engineer and also have a background in Web-site administration.</p>
+                   <p>In my spare time, I enjoy handcrafting and riding bike.</p>
+                   <div class="buttons">
+                       <button class="btn"><a href="https://kateklu.github.io/foocoding/HTML-CSS/Week01/">My CV</a></button>
+                       <button class="btn"><a href="#" id="projectBtn">My projects</a></button>
+                   </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects hidden" id="navProjects"> 
+            <div class="container">
+            <h2>Projects I've been working on</h2>
+
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide"> 
+                        <img src="./images/dictionary.png" alt="Dictionary App pic">
+                        <div class="project-description">
+                            <h3>Dictionary App</h3>
+                            <p>This application lets you learn the meanings, phonetics and synonyms of English words. Word search is done using free Dictionary API. It also uses free API of images collection to show photos for searched word.
+                            <br>
+                            The app built with React.js, CSS, HTML and Bootstrap</p>
+                            <button class="btn"><a href="https://keen-brioche-8ba8e7.netlify.app/">Launch app</a></button>
+                        </div>
+                     </div>
+                    <div class="slide">
+                        <img src="./images/weather_react.png" alt="Weather App pic">
+                        <div class="project-description">
+                            <h3>Weather App</h3>
+                            <p>This project is a free weather app. You can receive the weather conditions in any part of the world and in your current location. The weather app also provides wind speed, humidity and 5 days weather forecast.
+                            <br>
+                            The app built with React.js, CSS, HTML, Bootstrap useing API techology from OpenWeather and Animated weather icons</p>
+                            <button class="btn"><a href="https://vocal-gelato-82df56.netlify.app/">Launch app</a></button>
+                        </div>
+                    </div>                    
+                </div>
+                <button class="btn prev-btn">❮</button>
+                <button class="btn next-btn">❯</button>
+            </div>
+
+
+           </div>
+        </section>
+
+        <section class="contacts hidden" id="navContacts">
+            <div class="container">
+                <h2>Contact me</h2>
+                <form class="message-form">
+                    <label>Name</label>
+                    <input type="text" name="name" id="" placeholder="Name" required> 
+                    <label>Email</label>
+                    <input type="email" name="email" id="" placeholder="Email" required>
+                    <label>Message</label>
+                    <textarea name="message" id="" cols="30" rows="7" placeholder="Text message" required></textarea>
+                    <button class="btn btn-dark" type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    
+    <section class="login hidden">
+        <div class="container">
+            
+            <form class="login-form" id="loginForm">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Username" required>
+            
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password" required>
+                
+                <button type='submit' class="btn btn-dark">Login</button>
+            </form>
+        </div>
+    </section>     
+
+    <section class="admin hidden">
+        <div class="container">
+            <h2>Welcom to the admin page</h2>
+            <button class="btn" id="logout">Logout</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <a href="mailto:kate.kliuieva@gmail.com" class="contact-link"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/katerina-kliuieva/" target="_blank" class="contact-link"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/KateKlu" target="_blank" class="contact-link"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
