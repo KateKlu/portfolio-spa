@@ -80,9 +80,17 @@ function findCurrent() {
 
 function showHideSections(linkId) {
     const currentSection = findCurrent(); 
+    const footer = document.querySelector('footer');
 
     if (!currentSection.classList.contains(linkId)){
         currentSection.classList.add('hidden');
+
+        if (currentSection.classList.contains('home')) {     // change
+            footer.classList.remove('footer-for-home');      // footer
+        }                                                    // background
+        if (linkId == 'home') {                              // for
+            footer.classList.add('footer-for-home');         // home
+        }                                                    // page
 
         for (let section of sections) {
             if (section.classList.contains(linkId)) {

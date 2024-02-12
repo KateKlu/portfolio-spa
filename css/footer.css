@@ -1,7 +1,10 @@
 footer {
     background: url('../images/8.jpg') center/cover; 
-    /* background: linear-gradient(rgb(38, 3, 60), var(--secondary-color)); */
     padding: 2rem 1rem;
+}
+
+footer.footer-for-home {
+    background: linear-gradient(rgb(38, 3, 60), var(--secondary-color));
 }
 
 footer .container {
@@ -16,3 +19,20 @@ footer .contact-link {
     padding: 12px 17px;
 }
     
+
+/* ///////////////////////////// */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { }
