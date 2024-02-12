@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Katerina Kliuieva</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="image/x-icon" href="./images/icon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.ico">
     <script
       src="https://kit.fontawesome.com/ca9d744fce.js"
       crossorigin="anonymous"
@@ -15,7 +15,7 @@
     <header>
         <nav class='navbar'>
             <div class="container">
-                <a href="#"><img src="./images/logo-small.png" alt="" class="logo"></a>
+                <a href="#" id="logoBtn"><img src="images/logo-small.png" alt="" class="logo"></a>
                 <div class="burger-menu">
                     <i class="fa-solid fa-bars"></i>
                 </div>
@@ -40,14 +40,14 @@
  
         <section class="about hidden" id="navAboutme">
             <div class="container">
-                <img src="./images/photo_2024-01-31_12-29-22.jpg" alt="Katerina's photo">
+                <img src="images/photo_2024-01-31_12-29-22.jpg" alt="Katerina's photo">
                 <div class="about-me">
                    <h2>About me</h2>
                    <p>Let me introduce myself! My name is Katerina and I'm a front-end developer from Ukraine currently based in Sweden.</p>
                    <p>This is a new and very interesting step in my carrier. Before I worked like a QA Engineer and also have a background in Web-site administration.</p>
                    <p>In my spare time, I enjoy handcrafting and riding bike.</p>
                    <div class="buttons">
-                       <button class="btn"><a href="https://kateklu.github.io/foocoding/HTML-CSS/Week01/">My CV</a></button>
+                       <button class="btn"><a href="https://kateklu.github.io/foocoding/HTML-CSS/Week01/" target="_blank">My CV</a></button>
                        <button class="btn"><a href="#" id="projectBtn">My projects</a></button>
                    </div>
                 </div>
@@ -61,27 +61,27 @@
             <div class="slider-container">
                 <div class="slider">
                     <div class="slide"> 
-                        <img src="./images/dictionary.png" alt="Dictionary App pic">
+                        <img src="images/dictionary.png" alt="Dictionary App pic">
                         <div class="project-description">
                             <h3>Dictionary App</h3>
                             <p>This application lets you learn the meanings, phonetics and synonyms of English words. Word search is done using free Dictionary API. It also uses free API of images collection to show photos for searched word.
                             <br>
                             The app built with React.js, CSS, HTML and Bootstrap</p>
-                            <button class="btn"><a href="https://keen-brioche-8ba8e7.netlify.app/">Launch app</a></button>
+                            <button class="btn"><a href="https://keen-brioche-8ba8e7.netlify.app/" target="_blank">Launch app</a></button>
                         </div>
                      </div>
                     <div class="slide">
-                        <img src="./images/weather_react.png" alt="Weather App pic">
+                        <img src="images/weather_react.png" alt="Weather App pic">
                         <div class="project-description">
                             <h3>Weather App</h3>
                             <p>This project is a free weather app. You can receive the weather conditions in any part of the world and in your current location. The weather app also provides wind speed, humidity and 5 days weather forecast.
                             <br>
                             The app built with React.js, CSS, HTML, Bootstrap useing API techology from OpenWeather and Animated weather icons</p>
-                            <button class="btn"><a href="https://vocal-gelato-82df56.netlify.app/">Launch app</a></button>
+                            <button class="btn"><a href="https://vocal-gelato-82df56.netlify.app/" target="_blank">Launch app</a></button>
                         </div>
                     </div>                    
                 </div>
-                <button class="btn prev-btn">❮</button>
+                <button class="btn prev-btn" title="previos">❮</button>
                 <button class="btn next-btn">❯</button>
             </div>
 

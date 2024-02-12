@@ -68,6 +68,7 @@ const navLinks = document.querySelectorAll('.nav-link');
 const sections = document.querySelectorAll('section');
 const projectBtn = document.querySelector('#projectBtn');
 const contactsBtn = document.querySelector('#contactsBtn');
+const logoBtn = document.querySelector('#logoBtn');
 
 function findCurrent() {
     for (let section of sections) {
@@ -94,6 +95,8 @@ function showHideSections(linkId) {
 
 navLinks.forEach((link) => link.addEventListener('click', () => {showHideSections(link.id)}));
 
-projectBtn.addEventListener('click', () => {showHideSections('projects')})
+projectBtn.addEventListener('click', () => {showHideSections('projects')});
 
-contactsBtn.addEventListener('click', () => {showHideSections('contacts')})
+contactsBtn.addEventListener('click', () => {showHideSections('contacts')});
+
+logoBtn.addEventListener('click', () => {showHideSections('home')});

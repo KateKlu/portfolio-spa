@@ -1,0 +1,82 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header .navbar {
+    background: linear-gradient(var(--secondary-color), rgb(38, 3, 60));
+    color: white;
+}
+
+header .navbar .container {
+    display: flex;    
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+header .navbar #logoBtn {
+    display: flex;
+    align-items: center;
+}
+
+header .navbar .logo {
+    max-height: 2rem;
+    border-radius: 50%;
+}
+
+header .burger-menu {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+header .nav-links {
+    list-style: none;
+    display: none;
+}
+
+header .nav-links.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    background-color: var(--secondary-color); 
+}
+
+header .nav-links li {
+    padding: 10px 12px;
+}
+
+header .nav-links li:active {
+    border:1px solid rgb(38, 3, 60);
+    background: linear-gradient(var(--secondary-color), rgb(38, 3, 60));
+}
+
+
+
+/* ////////////////////////////// */
+@media screen and (min-width: 1000px) {
+header .navbar .container{
+    padding: 0;
+}
+
+header .navbar .logo {
+    max-height: 2.5rem;
+}
+
+header .burger-menu {
+    display: none;
+}
+
+header .nav-links {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: end;
+    background: none;
+  
+}
+}

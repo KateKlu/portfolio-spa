@@ -1,0 +1,90 @@
+.projects .container {
+    padding: 3rem 0 2rem;
+}
+
+.projects img {
+    display: block;
+    margin: 0 auto;
+    padding: 0.2rem;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    border: var(--border);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.projects .project-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects .slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.projects .slider-container .slider {
+    display: flex;
+    transition: transform;
+}
+
+.projects .slider-container .slider .slide {
+    padding: 0 2.1rem;
+    flex: 0 0 100%;
+}
+
+.projects .prev-btn,
+.projects .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    border-radius: 50%;
+    width: auto;
+    padding: 0 13px;
+}
+
+.projects .prev-btn {
+    left: 1px;
+}
+
+.projects .next-btn {
+    right: 1px;
+}
+
+/* ////////////////////// */
+@media screen and (min-width: 800px) {
+
+
+    .projects .container {
+        padding: 6rem 0;
+    }
+
+    .projects .slider-container .slider .slide {
+        display: flex;
+        justify-content: space-between;
+        align-items:center
+    }
+
+    .projects img {
+        width: 50%;
+        padding: 0.4rem;
+        margin: 0 0.5rem;
+    }
+
+    .projects .project-description {
+        padding: 0.5rem;
+    }   
+
+    .projects .prev-btn {
+        left: 0px;
+    }
+    
+    .projects .next-btn {
+        right: 0px;
+    }
+
+} 

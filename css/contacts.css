@@ -1,0 +1,62 @@
+.contacts .container {
+    padding: 2rem 1rem;
+}
+
+.contacts .message-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts label {
+    display: none;
+}
+
+.contacts input, .contacts textarea {
+    margin-bottom: 1rem;
+    padding: 7px;
+    border: var(--border);
+    border-radius: 4px;
+    color: var(--secondary-color);
+    background-color: white;
+}
+
+.contacts .btn {
+    align-self: center;
+}
+/* /////////////////////////////// */
+
+@media screen and (min-width: 800px) {
+    .contacts .message-form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+    
+    .contacts label {
+        display: block;
+        width: 20%;
+    }
+
+    .contacts input, .contacts textarea {
+        width: 80%;
+        
+    }
+
+    .contacts .message-form button {
+        margin: 3rem auto 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+.contacts .container {
+    padding: 6rem 10rem 7rem;
+}
+
+.contacts h2 {
+    margin-bottom: 4rem;
+}
+
+}
+
