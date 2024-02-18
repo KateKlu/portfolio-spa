@@ -30,22 +30,21 @@ body {
 
 h1, h2, h3 {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.3rem;
     font-weight: 800;
     font-family: 'Playfair Display', serif;
-    color: linear-gradient(rgb(242, 165, 74), var(--secondary-color));
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
 }
 
 h2 {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
 }
 
 h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 p, a, label, input, textarea, button {
@@ -71,10 +70,13 @@ a {
 .container {
     width: 100%;
     margin: 0 auto;   
+    padding: 1.5rem 1.5rem;
 }
 
 section {
     min-height: calc(100vh - 48px - 116px);
+    display: flex;
+    align-items: center;   
 }
 
 .btn {
@@ -95,31 +97,85 @@ section {
 
 /*///////////////////////////////////////////////// */
 
-@media screen and (min-width: 1000px) {
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+h1 {
+    font-size: 2.7rem;
+}
+
+h2 {
+    font-size: 1.9rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+p, a, label, input, textarea, button {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+p, a, label, input, textarea, button {
+    font-size: 1.2rem;
+}
+
+.btn {
+    margin-top: 3rem;
+    width: 10rem;
+}
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
     h1 {
-        font-size: 4rem;
+        font-size: 5rem;
     }
     
     h2 {
-        font-size: 2.8rem;
+        font-size: 3.2rem;
         margin-bottom: 2rem;
     }
     
     h3 {
-        font-size: 2.2rem;
+        font-size: 2.7rem;
     }
     
     p, a, label, input, textarea, button {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
-
+    
+    .btn {
+        margin-top: 3rem;
+        width: 12rem;
+    }
+}
+ 
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
     .container {
         max-width: 1000px;
     }
+}
 
-    .btn {
-        margin-top: 3rem;
-        width: 10rem;
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    .container {
+        max-width: 1200px;
     }
 }
 

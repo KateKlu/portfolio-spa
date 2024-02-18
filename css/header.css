@@ -11,7 +11,8 @@ header .navbar {
 
 header .navbar .container {
     display: flex;    
-    padding: 0 20px;
+    padding-top: 0;
+    padding-bottom: 0;
     justify-content: space-between;
 }
 
@@ -57,26 +58,35 @@ header .nav-links li:active {
 
 
 /* ////////////////////////////// */
-@media screen and (min-width: 1000px) {
-header .navbar .container{
-    padding: 0;
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    header .navbar .logo {
+        max-height: 2.5rem;
+    }
+
+    header .burger-menu {
+        display: none;
+    }
+
+    header .nav-links {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        justify-content: end;
+        background: none;
+    }  
 }
 
-header .navbar .logo {
-    max-height: 2.5rem;
-}
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { }
 
-header .burger-menu {
-    display: none;
-}
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { }
 
-header .nav-links {
-    position: static;
-    display: flex;
-    flex-direction: row;
-    width: 70%;
-    justify-content: end;
-    background: none;
-  
-}
-}
