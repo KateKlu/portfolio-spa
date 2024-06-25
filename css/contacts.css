@@ -1,8 +1,33 @@
 .contacts .container {
-    padding: 2rem 1rem;
+   padding: 2rem 1rem;
 }
 
-.contacts .message-form {
+.contacts .contactBlock {
+   display: flex;
+   flex-direction: column;
+   /* justify-content: space-between; */
+}
+
+.contacts .contact {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.contacts h3 {
+   color: white;
+   text-shadow: 1px 1px 4px var(--secondary-color);
+}
+
+.contacts i {
+   color: #fede3f;
+}
+
+.contacts a {
+   color: var(--secondary-color);
+}
+
+/* .contacts .message-form {
     display: flex;
     flex-direction: column;
 }
@@ -22,56 +47,61 @@
 
 .contacts .btn {
     align-self: center;
-}
+} */
 /* /////////////////////////////// */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { }
+@media (min-width: 576px) {
+   .contacts .contactBlock {
+      flex-direction: row;
+      justify-content: space-between;
+   }
+}
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { }
+@media (min-width: 768px) {
+}
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { }
+@media (min-width: 992px) {
+}
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { }
+@media (min-width: 1200px) {
+}
 
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) { }
+@media (min-width: 1400px) {
+}
 
 @media screen and (min-width: 800px) {
-    .contacts .message-form {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+   .contacts .message-form {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
 
-    }
-    
-    .contacts label {
-        display: block;
-        width: 20%;
-    }
+   .contacts label {
+      display: block;
+      width: 20%;
+   }
 
-    .contacts input, .contacts textarea {
-        width: 80%;
-        
-    }
+   .contacts input,
+   .contacts textarea {
+      width: 80%;
+   }
 
-    .contacts .message-form button {
-        margin: 3rem auto 0;
-    }
+   .contacts .message-form button {
+      margin: 3rem auto 0;
+   }
 }
 
 @media screen and (min-width: 1000px) {
+   .contacts .container {
+      padding: 0 2rem;
+   }
 
-.contacts .container {
-    padding: 6rem 10rem 7rem;
+   .contacts h2 {
+      margin-bottom: 4rem;
+   }
 }
-
-.contacts h2 {
-    margin-bottom: 4rem;
-}
-
-}
-
