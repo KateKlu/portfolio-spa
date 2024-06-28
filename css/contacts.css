@@ -2,10 +2,9 @@
    padding: 2rem 1rem;
 }
 
-.contacts .contactBlock {
+.contacts .contacts-block {
    display: flex;
    flex-direction: column;
-   /* justify-content: space-between; */
 }
 
 .contacts .contact {
@@ -20,7 +19,7 @@
 }
 
 .contacts i {
-   color: #fede3f;
+   color: rgb(254, 222, 63);
 }
 
 .contacts a {
@@ -52,10 +51,6 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-   .contacts .contactBlock {
-      flex-direction: row;
-      justify-content: space-between;
-   }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -64,6 +59,10 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+   .contacts .contacts-block {
+      flex-direction: row;
+      justify-content: space-between;
+   }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
