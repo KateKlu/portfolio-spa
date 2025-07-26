@@ -14,7 +14,7 @@ Smooth section navigation, custom project slider, burger menu for mobile and a c
 -  One‑page layout with animated scroll
 -  3×3 custom slider showcasing projects
 -  Burger navigation under 768 px
--  Fully responsive (mobile → 4K)
+-  Fully responsive
 -  Deployed on Netlify CI/CD
 
 ## Tech Stack
